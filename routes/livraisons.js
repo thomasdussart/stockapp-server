@@ -50,4 +50,12 @@ module.exports = function (app) {
         res.status(500).json({ message: "Erreur lors de la mise à jour" });
       });
   });
+
+  app.delete("/livraisons/:id", async (req, res) => {
+    let id = req.params.id;
+
+    Livraison.findOneAndDelete({ id: id }).then((product) => {
+      res.json(product);
+    });
+  });
 };
