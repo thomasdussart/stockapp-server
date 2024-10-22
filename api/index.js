@@ -2,15 +2,15 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const { db } = require("./config/db");
-const verifyToken = require("./middleware/authMiddleware");
+const { db } = require("../config/db");
+const verifyToken = require("../middleware/authMiddleware");
 const path = require("path");
 const fs = require("fs");
 
 app.use(bodyParser.json());
 app.use(cors());
 
-require("./middleware/allowCors");
+require("../middleware/allowCors");
 
 // connect DB
 db;
@@ -37,7 +37,7 @@ db;
 // // Routes livraisons
 // require("./routes/livraisons", verifyToken)(app);
 
-const routesPath = path.join(__dirname, "routes");
+const routesPath = path.join(__dirname, "..", "routes");
 fs.readdirSync(routesPath).forEach((file) => {
   if (file.endsWith(".js")) {
     const route = require(path.join(routesPath, file));
