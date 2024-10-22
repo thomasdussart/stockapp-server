@@ -20,47 +20,47 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 // routes depot
-require("./routes/depot", verifyToken)(app);
+require("../routes/depot", verifyToken)(app);
 // routes stock
-require("./routes/stock", verifyToken)(app);
+require("../routes/stock", verifyToken)(app);
 // Routes LSR
-require("./routes/lsr", verifyToken)(app);
+require("../routes/lsr", verifyToken)(app);
 // Routes GH
-require("./routes/gh", verifyToken)(app);
+require("../routes/gh", verifyToken)(app);
 // Routes Thisnes
-require("./routes/thisnes", verifyToken)(app);
+require("../routes/thisnes", verifyToken)(app);
 // Routes Merdorp
-require("./routes/merdorp", verifyToken)(app);
+require("../routes/merdorp", verifyToken)(app);
 // Routes Moxhe
-require("./routes/moxhe", verifyToken)(app);
+require("../routes/moxhe", verifyToken)(app);
 //Routes Avernas
-require("./routes/avernas", verifyToken)(app);
+require("../routes/avernas", verifyToken)(app);
 // Routes AC
-require("./routes/ac", verifyToken)(app);
+require("../routes/ac", verifyToken)(app);
 // Routes Academie
-require("./routes/academie", verifyToken)(app);
+require("../routes/academie", verifyToken)(app);
 // Routes AHDV
-require("./routes/ahdv", verifyToken)(app);
+require("../routes/ahdv", verifyToken)(app);
 // Routes Bibli
-require("./routes/bibli", verifyToken)(app);
+require("../routes/bibli", verifyToken)(app);
 // Routes Economat
-require("./routes/economat", verifyToken)(app);
+require("../routes/economat", verifyToken)(app);
 // Routes Emploi
-require("./routes/emploi", verifyToken)(app);
+require("../routes/emploi", verifyToken)(app);
 // Routes mds
-require("./routes/mds", verifyToken)(app);
+require("../routes/mds", verifyToken)(app);
 // Routes Saline
-require("./routes/saline", verifyToken)(app);
+require("../routes/saline", verifyToken)(app);
 // Routes login
-require("./routes/login")(app);
+require("../routes/login")(app);
 // Routes users
-require("./routes/users")(app);
+require("../routes/users")(app);
 // Routes notifications
-require("./routes/notifications", verifyToken)(app);
+require("../routes/notifications", verifyToken)(app);
 // Routes livraisons
-require("./routes/livraisons", verifyToken)(app);
+require("../routes/livraisons", verifyToken)(app);
 // Routes commandes
-require("./routes/commandes", verifyToken)(app);
+require("../routes/commande", verifyToken)(app);
 
 // const routesPath = path.join(__dirname, "..", "routes");
 // fs.readdirSync(routesPath).forEach((file) => {
