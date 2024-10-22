@@ -10,6 +10,8 @@ const fs = require("fs");
 app.use(bodyParser.json());
 app.use(cors());
 
+require("../middleware/allowCors");
+
 // connect DB
 db;
 
