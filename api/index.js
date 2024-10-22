@@ -15,6 +15,9 @@ require("../middleware/allowCors");
 // connect DB
 db;
 
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
 // // routes depot
 // require("./routes/depot", verifyToken)(app);
 // // routes stock
