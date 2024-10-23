@@ -11,6 +11,10 @@ const livraisonSchema = new mongoose.Schema({
     required: true,
     trim: true,
   },
+  count: {
+    type: Number,
+    required: true,
+  },
   whoAsked: {
     type: String,
     required: true,

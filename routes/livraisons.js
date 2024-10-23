@@ -31,6 +31,7 @@ module.exports = function (app) {
 
     const updatedProduct = {
       id: req.params.id,
+      count: req.body.count,
       status: req.body.status,
       whoDelivering: req.body.whoDelivering,
       dateOfDelivery:
