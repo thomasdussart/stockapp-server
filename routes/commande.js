@@ -65,6 +65,7 @@ module.exports = function (app) {
           const livraison = new Livraison({
             id: uuidv4(),
             product: `${name} - ${type}`,
+            count: commandCount,
             whoAsked: user,
             dateOfAsking: new Date().toLocaleString("fr-FR"),
             status: "En attente",
